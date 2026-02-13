@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Ana ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#3a0000,#8b0000,#ff1a1a);
+color:white;
+overflow-x:hidden;
+}
+
+/* Floating Hearts Background */
+
+.heart{
+position:fixed;
+bottom:-50px;
+color:rgba(255,255,255,0.15);
+font-size:20px;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0) scale(1);}
+100%{transform:translateY(-110vh) scale(1.5);}
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:3rem;
+background:linear-gradient(90deg,#fff,#ffcccc);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+header p{
+margin-top:20px;
+font-size:1.2rem;
+opacity:0.9;
+}
+
+/* Envelope */
+
+.envelope-container{
+display:flex;
+justify-content:center;
+margin:80px 0;
+}
+
+.envelope{
+width:260px;
+height:170px;
+background:#b30000;
+position:relative;
+cursor:pointer;
+border-radius:8px;
+transition:transform 0.5s ease;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.envelope:before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#8b0000;
+clip-path:polygon(0 0,50% 50%,100% 0);
+transition:0.6s ease;
+}
+
+.envelope.open:before{
+transform:rotateX(180deg);
+transform-origin:top;
+}
+
+.envelope-text{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:600;
+}
+
+/* Message Section */
+
+section{
+max-width:800px;
+margin:auto;
+padding:50px 20px;
+}
+
+.card{
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:20px;
+margin-bottom:25px;
+border:1px solid rgba(255,255,255,0.08);
+
+opacity:0;
+transform:translateY(60px);
+filter:blur(8px);
+transition:all 1s cubic-bezier(0.16,1,0.3,1);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+filter:blur(0);
+}
+
+.card:hover{
+transform:translateY(-5px) scale(1.02);
+transition:0.4s;
+}
+
+footer{
+text-align:center;
+padding:40px 10px;
+opacity:0.7;
+font-size:0.9rem;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<script>
+for(let i=0;i<25;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(15+Math.random()*25)+"px";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+}
+</script>
+
+<header>
+<h1>For My Ana ❤️</h1>
+<p>Since 13 May 2021 — The Most Beautiful Chapter of My Life</p>
+</header>
+
+<div class="envelope-container">
+<div class="envelope" onclick="openEnvelope(this)">
+<div class="envelope-text">Tap to Open 💌</div>
+</div>
+</div>
+
+<section id="message" style="display:none;">
+
+<div class="card">
+Meri pyari si Ana ❤️ Pta hai, kabhi kabhi sochta hu ki meri life itni beautiful kaise ho gayi… phir yaad aata hai ki usme meri laddu aa gayi 🥺 Tu sirf meri wife nahi hai, tu meri smile ka reason hai, meri har subah ka first thought hai, aur meri har raat ka last feeling hai.
+</div>
+
+<div class="card">
+Meri guddu, jab tu hasti hai na… sach me lagta hai duniya thodi si aur pinkish aur cutish ho gayi. Tera nakhre dikhana, tera bina wajah cute banna — sab kuch itna accha lagta hai ki main explain hi nahi kar paunga babu.
+</div>
+
+<div class="card">
+Aur meri pglu, tu itni innocent hai kabhi kabhi ki bas dil karta hai tujhe tight hug karke bolu “meri hi rehna hamesha” 🫂❤️ Aur hamesha rehna hi padega samjhi 🥹
+</div>
+
+<div class="card">
+Mera chhota sa baccha, tu meri strength bhi hai aur meri weakness bhi. Jab tu khush hoti hai, mujhe lagta hai maine duniya jeet li. Aur jab tu thodi si sad hoti hai, mera dil heavy ho jata hai.
+</div>
+
+<div class="card">
+Meri shona, I promise main hamesha tere saath rahunga — tere har mood me, har phase me, har problem me.
+</div>
+
+<div class="card">
+Aur meri Riya, tu meri life ka sabse beautiful chapter hai. Since 13 May 2021, meri duniya change ho gayi. And this chapter will never end.
+</div>
+
+<div class="card">
+Meri sweet si Rose 🌹 Tu meri zindagi ki khushbu hai. Jaise rose bina garden adhoora lagta hai, waise hi tu bina meri life adhoori hai.
+</div>
+
+<div class="card">
+Ana, main tujhe sirf pyaar nahi karta… main tujhe feel karta hu, respect karta hu, cherish karta hu. Tu meri aadat hai, mera sukoon hai, mera ghar hai. ❤️
+</div>
+
+</section>
+
+<footer>
+Made with infinite love for Ana 💖
+</footer>
+
+<script>
+
+function openEnvelope(el){
+el.classList.add("open");
+setTimeout(()=>{
+document.getElementById("message").style.display="block";
+window.scrollTo({
+top:document.getElementById("message").offsetTop,
+behavior:"smooth"
+});
+},600);
+}
+
+/* Scroll Reveal Animation */
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{
+threshold:0.3
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+observer.observe(card);
+});
+
+</script>
+
+</body>
+</html>
